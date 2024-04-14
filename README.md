@@ -1,2 +1,2 @@
 # Framework
-JAVA Serenity BDD and ROBOT PY Framewoek
+JAVA Serenity BDD and ROBOT PY Framework

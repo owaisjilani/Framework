@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="DataIntake">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/framl-taf/Resources/DataIntake/TC-7867003.zip!/" />
+      <root url="jar://$PROJECT_DIR$/framl-taf/Resources/DataIntake/TC-001_S3Util.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

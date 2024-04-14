@@ -1,0 +1,14 @@
+[Metadata]    Author    Owais Jilani
+*** Variables ***
+
+&{ANALYST_USER}         USERNAME=standard_user    PASSWORD=#enc#_gAAAAABljU3gL2ggbar_rgpwqUuMIjDPmLSzEa0TrqBq-YPejhG46PzPE6u3YZVYAfjthk0VffqAV620XT3Td-kkHQBKZ4_KNw==    FNAME=Aml     LNAME=Analyst    ROLE=ANALYST  EMAIL=testamlanalyst@test.com
+&{ANALYST2_USER}        USERNAME=standard_user    PASSWORD=#enc#_gAAAAABljU3gL2ggbar_rgpwqUuMIjDPmLSzEa0TrqBq-YPejhG46PzPE6u3YZVYAfjthk0VffqAV620XT3Td-kkHQBKZ4_KNw==    FNAME=Anup     LNAME=    ROLE=ANALYST    EMAIL=email@appname.com
+&{ANALYST2_PASSWORD}    USERNAME=standard_user    PASSWORD=#enc#_gAAAAABljU3gL2ggbar_rgpwqUuMIjDPmLSzEa0TrqBq-YPejhG46PzPE6u3YZVYAfjthk0VffqAV620XT3Td-kkHQBKZ4_KNw==   FNAME=Anup     LNAME=    ROLE=TM ANALYST    EMAIL=email@appname.com
+&{TM_ANALYST_USER}      USERNAME=standard_user    PASSWORD=#enc#_gAAAAABljU3gL2ggbar_rgpwqUuMIjDPmLSzEa0TrqBq-YPejhG46PzPE6u3YZVYAfjthk0VffqAV620XT3Td-kkHQBKZ4_KNw==   FNAME=Anup     LNAME=    ROLE=ANALYST     EMAIL=email@appname.com
+&{MANAGER_USER}         USERNAME=standard_user        PASSWORD=secret_sauce      FNAME=auto     LNAME=manager    ROLE=MANAGER    EMAIL=auto@manager.com
+&{TM_MANAGER_USER}      USERNAME=standard_user       PASSWORD=#enc#_gAAAAABljU3gL2ggbar_rgpwqUuMIjDPmLSzEa0TrqBq-YPejhG46PzPE6u3YZVYAfjthk0VffqAV620XT3Td-kkHQBKZ4_KNw==    FNAME=Owais Jilani     LNAME=    ROLE=MANAGER    EMAIL=email@appname.com
+&{TELLER_USER}          USERNAME=standard_user       PASSWORD=#enc#_gAAAAABljU3gL2ggbar_rgpwqUuMIjDPmLSzEa0TrqBq-YPejhG46PzPE6u3YZVYAfjthk0VffqAV620XT3Td-kkHQBKZ4_KNw==    FNAME=Owais Jilani     LNAME=    ROLE=MANAGER    EMAIL=email@appname.com
+&{QA_USER}              USERNAME=alphaqamanager        PASSWORD=#enc#_gAAAAABlH7fQxUVZjPqC3jD9Z3Svp9R-SL3w9r1fla8VwjHLoR6ddte-ZNOkBNC9dMPm1FlMDM7wsc4BQ0YGVpFcA0hR-LOamQ==        FNAME=Owais     LNAME=Jilani    ROLE=MANAGER    EMAIL=owais.jilani@appname.com
+&{AUDIT_USER}           USERNAME=standard_user       PASSWORD=#enc#_gAAAAABljU3gL2ggbar_rgpwqUuMIjDPmLSzEa0TrqBq-YPejhG46PzPE6u3YZVYAfjthk0VffqAV620XT3Td-kkHQBKZ4_KNw==    FNAME=Owais Jilani     LNAME=    ROLE=MANAGER    EMAIL=email@appname.com
+&{ADM_USER}             USERNAME=standard_user       PASSWORD=#enc#_gAAAAABljU3gL2ggbar_rgpwqUuMIjDPmLSzEa0TrqBq-YPejhG46PzPE6u3YZVYAfjthk0VffqAV620XT3Td-kkHQBKZ4_KNw==    FNAME=Owais Jilani     LNAME=    ROLE=MANAGER    EMAIL=email@appname.com
+&{INVALID_USER}         USERNAME=standard_user       PASSWORD=#enc#_oWAISJ_Z8ZIFvwK9u22t6T1Opxoj6R3V1K4L9T0Gi5pHuOQGdvyUhua9-k7G00WNiUjrzn6pYxND0vl9ojVhsuPZ8hiI_rB==    FNAME=UNKNOWN     LNAME=    ROLE=MANAGER    EMAIL=email@appname.com

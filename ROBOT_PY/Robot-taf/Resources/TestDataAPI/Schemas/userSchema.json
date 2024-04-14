@@ -1,0 +1,28 @@
+{
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "activeAlertCount": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "firstName",
+        "lastName",
+        "activeAlertCount"
+      ]
+    }
+]
+}

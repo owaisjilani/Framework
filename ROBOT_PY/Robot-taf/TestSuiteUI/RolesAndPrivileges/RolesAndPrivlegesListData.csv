@@ -1,0 +1,2 @@
+*** Test Cases ***|${roles}|${channel}|@{PrivlegesYes}|@{PrivlegesNo}
+Default Manager List|Manager|ChannelName|Add Attachment,Add Comments|View Feature,View Application|

@@ -1,0 +1,538 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "result": {
+      "type": "object",
+      "properties": {
+        "result": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "fullKey": {
+                "type": "string"
+              },
+              "amountAtRisk": {
+                "type": "number"
+              },
+              "amountLost": {
+                "type": "number"
+              },
+              "createdOn": {
+                "type": "string"
+              },
+              "updatedOn": {
+                "type": "string"
+              },
+              "dueDate": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "channel": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "priority": {
+                "type": "string"
+              },
+              "riskLevel": {
+                "type": "string"
+              },
+              "assignee": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "firstName": {
+                      "type": "string"
+                    },
+                    "lastName": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "firstName",
+                    "lastName"
+                  ]
+                }
+              },
+              "resolutionDetails": {
+                "type": "object",
+                "properties": {
+                  "resolutions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "comment": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "resolutions"
+                ]
+              },
+              "owner": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "firstName": {
+                    "type": "string"
+                  },
+                  "lastName": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "firstName",
+                  "lastName"
+                ]
+              },
+              "category": {
+                "type": "string"
+              },
+              "alerts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "alertId": {
+                      "type": "string"
+                    },
+                    "riskFactor": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "riskFactorName": {
+                            "type": "string"
+                          },
+                          "longName": {
+                            "type": "string"
+                          },
+                          "shortName": {
+                            "type": "string"
+                          },
+                          "description": {
+                            "type": "string"
+                          },
+                          "riskBin": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "riskFactorName",
+                          "longName",
+                          "shortName",
+                          "description",
+                          "riskBin"
+                        ]
+                      }
+                    },
+                    "riskScore": {
+                      "type": "number"
+                    },
+                    "riskLevel": {
+                      "type": "string"
+                    },
+                    "account": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "accountNumber": {
+                            "type": "string"
+                          },
+                          "cleanAccountNumber": {
+                            "type": "string"
+                          },
+                          "id": {
+                            "type": "string"
+                          },
+                          "status": {
+                            "type": "string"
+                          },
+                          "type": {
+                            "type": "string"
+                          },
+                          "balance": {
+                            "type": "number"
+                          },
+                          "openAmount": {
+                            "type": "number"
+                          },
+                          "creationDate": {
+                            "type": "string"
+                          },
+                          "institution": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "auditId": {
+                                "type": "string"
+                              },
+                              "deleted": {
+                                "type": "boolean"
+                              },
+                              "externalId": {
+                                "type": "string"
+                              },
+                              "shortName": {
+                                "type": "string"
+                              },
+                              "parent": {
+                                "type": "string"
+                              },
+                              "address": {
+                                "type": "string"
+                              },
+                              "city": {
+                                "type": "string"
+                              },
+                              "state": {
+                                "type": "string"
+                              },
+                              "zipCode": {
+                                "type": "string"
+                              },
+                              "country": {
+                                "type": "string"
+                              },
+                              "legalName": {
+                                "type": "string"
+                              },
+                              "tin": {
+                                "type": "string"
+                              },
+                              "tinType": {
+                                "type": "string"
+                              },
+                              "rssd": {
+                                "type": "string"
+                              },
+                              "active": {
+                                "type": "boolean"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "auditId",
+                              "deleted",
+                              "externalId",
+                              "shortName",
+                              "parent",
+                              "address",
+                              "city",
+                              "state",
+                              "zipCode",
+                              "country",
+                              "legalName",
+                              "tin",
+                              "tinType",
+                              "rssd",
+                              "active"
+                            ]
+                          },
+                          "accManagerRelationships": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "customer": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string"
+                                    },
+                                    "externalId": {
+                                      "type": "string"
+                                    },
+                                    "entity": {
+                                      "type": "boolean"
+                                    },
+                                    "suffix": {
+                                      "type": "string"
+                                    },
+                                    "middleName": {
+                                      "type": "string"
+                                    },
+                                    "fullName": {
+                                      "type": "string"
+                                    },
+                                    "gender": {
+                                      "type": "string"
+                                    },
+                                    "occupation": {
+                                      "type": "string"
+                                    },
+                                    "firstName": {
+                                      "type": "string"
+                                    },
+                                    "maritalStatus": {
+                                      "type": "string"
+                                    },
+                                    "grossAnnualIncome": {
+                                      "type": "number"
+                                    },
+                                    "nationality": {
+                                      "type": "string"
+                                    },
+                                    "birth": {
+                                      "type": "string"
+                                    },
+                                    "birthUnknown": {
+                                      "type": "boolean"
+                                    },
+                                    "criticalSubjectInformationUnavailable": {
+                                      "type": "boolean"
+                                    },
+                                    "lastName": {
+                                      "type": "string"
+                                    },
+                                    "tin": {
+                                      "type": "string"
+                                    },
+                                    "tinType": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "id",
+                                    "externalId",
+                                    "entity",
+                                    "suffix",
+                                    "middleName",
+                                    "fullName",
+                                    "gender",
+                                    "occupation",
+                                    "firstName",
+                                    "maritalStatus",
+                                    "grossAnnualIncome",
+                                    "nationality",
+                                    "birth",
+                                    "birthUnknown",
+                                    "criticalSubjectInformationUnavailable",
+                                    "lastName",
+                                    "tin",
+                                    "tinType"
+                                  ]
+                                },
+                                "relationship": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "customer",
+                                "relationship"
+                              ]
+                            }
+                          }
+                        },
+                        "required": [
+                          "accountNumber",
+                          "cleanAccountNumber"
+                        ]
+                      }
+                    },
+                    "amount": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "alertId",
+                    "riskFactor",
+                    "riskScore",
+                    "riskLevel"
+                  ]
+                }
+              },
+              "attachments": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "location": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "number"
+                    },
+                    "deleted": {
+                      "type": "boolean"
+                    },
+                    "fileStatus": {
+                      "type": "string"
+                    },
+                    "attachmentComments": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "commentedBy": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "firstName": {
+                                "type": "string"
+                              },
+                              "lastName": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "firstName",
+                              "lastName"
+                            ]
+                          },
+                          "commentMessage": {
+                            "type": "string"
+                          },
+                          "commentedOn": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "commentedBy",
+                          "commentMessage",
+                          "commentedOn"
+                        ]
+                      }
+                    },
+                    "createdDateTime": {
+                      "type": "string"
+                    },
+                    "createdBy": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "location",
+                    "name",
+                    "type",
+                    "size",
+                    "deleted",
+                    "fileStatus",
+                    "createdDateTime",
+                    "createdBy"
+                  ]
+                }
+              },
+              "subjects": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "externalId": {
+                      "type": "string"
+                    },
+                    "fullName": {
+                      "type": "string"
+                    },
+                    "tin": {
+                      "type": "string"
+                    },
+                    "tinType": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "fullName"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "id",
+              "fullKey",
+              "amountAtRisk",
+              "amountLost",
+              "createdOn",
+              "updatedOn",
+              "type",
+              "state",
+              "channel",
+              "source",
+              "priority",
+              "assignee",
+              "resolutionDetails",
+              "owner",
+              "alerts",
+              "subjects"
+            ]
+          }
+        },
+        "statistics": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "number"
+            },
+            "totalAssignedToCurrentUser": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "total",
+            "totalAssignedToCurrentUser"
+          ]
+        }
+      },
+      "required": [
+        "result",
+        "statistics"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "result"
+  ]
+}

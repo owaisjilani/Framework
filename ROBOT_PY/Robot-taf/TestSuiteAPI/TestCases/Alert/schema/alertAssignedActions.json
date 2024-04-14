@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "result": {
+      "type": "object",
+      "properties": {
+        "AML": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "key": {
+                "type": "string"
+              },
+              "assignActionOption": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string"
+                    },
+                    "key": {
+                      "type": "string"
+                    },
+                    "showFor": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "label",
+                    "key"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "label",
+              "key",
+              "assignActionOption"
+            ]
+          }
+        },
+        "FRAUD": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "key": {
+                "type": "string"
+              },
+              "assignActionOption": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string"
+                    },
+                    "key": {
+                      "type": "string"
+                    },
+                    "showFor": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "label",
+                    "key"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "label",
+              "key"
+            ]
+          }
+        }
+      },
+      "required": [
+        "AML",
+        "FRAUD"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "result"
+  ]
+}

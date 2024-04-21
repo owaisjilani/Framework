@@ -1,5 +1,7 @@
 # [Metadata]  Author  Owais Jilani
-
+searchInput = "css:[name='q']"
+oBmsLink ="(//a[@jsname='UWckNb'])[2]"
+oButton = "//button"
 oUsername = "id=user-name"
 oPassword = "id=password"
 oLoginButton = "id=login-button"

@@ -1,0 +1,8 @@
+@Step
+	public void verify_schedulerPage() {
+		ArrayList<String> tabs2 = new ArrayList<String>(getDriver().getWindowHandles());
+		getDriver().switchTo().window(tabs2.get(1));
+		Assert.assertTrue($(By.id("createNewSchedule")).waitUntilVisible().isDisplayed());
+		getDriver().close();
+		getDriver().switchTo().window(tabs2.get(0));
+	}

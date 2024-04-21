@@ -1,0 +1,51 @@
+For Senior QA L1/L2 
+
+ 
+
+Navigate to http://tutorialsninja.com/demo/  
+
+Check if the title is displayed as `Your Store`. This is the Home Page of application 
+
+Navigate to “Components’ Menu and select “Monitors” submenu option 
+
+Registering to website 
+
+Click “My Account” > “Register” button 
+
+Enter your First Name, Last Name, Enter a random emailid, Telephone=”123456789”. Password as “Test” 
+
+Click “Continue” button 
+
+Check if you see the error message as “Warning: You must agree to the Privacy Policy!” 
+
+Select the checkbox next to privacy policy & click “Continue” button 
+
+Check if user is taken to “Success” page and validate if “Your Account Has Been Created!” message appears on screen 
+
+Click “Continue” button & see if user is taken to “Account” Page 
+
+Click “Change your password” hyperlink 
+
+Check if you are taken to “Change Password” page 
+
+Enter the password as “Atmosol” and click on “Continue” button 
+
+Verify if you land back on “Account” Page with a message “Success: Your password has been successfully updated.” 
+
+Click “My Account” > “Logout” button 
+
+POINTS TO CONSIDER: 
+
+Create a new Java, C# project with an appropriate test framework like Nunit, TestNG etc., 
+
+Automate tests in Chrome browser 
+
+Use parameterized data instead of hardcoded test data 
+
+Use Page Object Model with Selenium 
+
+Make your functions more generic and use coding best practices as far as possible 
+
+Once the test is done, please zip the entire project and send it to us 
+
+ 

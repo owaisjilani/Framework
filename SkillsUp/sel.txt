@@ -1,0 +1,42 @@
+
+ List <WebElements> textboxes =driver.findElements(By.xpath("//input[@class='textbox']"));
+
+
+int i=0;
+for(WebElement we : textboxes)
+{
+	we.click();
+	we.sendKeys(i);
+	i++;
+
+}
+
+Dear [Manager’s Name],
+
+
+
+Please feel free to contact me with any questions about the projects I have been working on. I am happy to help in any way I can with the transition process.
+
+I wish you all the best for your continued success.
+
+
+During my time at NICE LTD, I have learned a lot and grown professionally. Thank you for all of your guidance and support during my employment.
+
+I am writing to formally notify you of my resignation from the position of QA ENGINEER with NICE LTD. Per my notice period, my final day will be 06-JULY-2022.
+
+
+During my time at [company name], I have come to realise that the scope of the role is unfortunately not what I had anticipated. As such, I would like to explore other opportunities.
+
+Thank you for understanding; I truly appreciate all the support and guidance you have provided me during my time in the company.
+
+Please let me know how I can help to support a smooth transition over the next
+
+Thank you for offering me the Junior Consultant position. I would like to express again how excited I am to begin working for your company.
+
+Befor I can accept however, I would like to discuss the matter of compensation. As we discussed in the interviews, I have more skills and formal training than you required in the job description. I have also demonstrated my capabilities in my last position at my previous company by improving the quality of the product. With my expertise, an acceptable salary would fall in the range of 98LPA-99LPA, a bit higher than your offer of 100LPA.
+
+I can certainly see a future for myself at the company, and I’m confident that I can bring a lot of value. I know that we can come to a mutual agreement on an acceptable salary.
+
+Thank you for your time.
+
+NOTE : There is a correction in my Last Name its 'JILANI' not Jhilani.

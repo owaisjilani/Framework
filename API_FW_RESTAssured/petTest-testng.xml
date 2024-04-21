@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Specific Pet Test Suite">
+    <listeners>
+        <listener  class-name="api.utilities.ExtentReportManager" />
+    </listeners>
+
+    <test name="Run Specific Test">
+        <classes>
+            <class name="api.test.PetTest">
+                <methods>
+                    <include name="testGetEndpoint"/> <!-- Specific method -->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

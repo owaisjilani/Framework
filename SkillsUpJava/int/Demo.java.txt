@@ -1,0 +1,49 @@
+package com.programs;
+
+import java.util.ArrayList;
+
+class Demo {
+	public static void main(String[] args) {
+		System.out.println("Hello, World!");
+		int[] ar = { 1, 2, 3, 4, 5 };
+		int k = 5;
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		for (int i = 0; i < ar.length; i++) {
+			if (ar[i] < k) {
+				al.add(ar[i]);
+			}
+		}
+
+		int arrSize = al.size();
+		for (int p = 0; p < arrSize; p++) {
+			for (int m = p; m <= arrSize; m++) {
+				for (int j = p; j < m; j++) {
+					System.out.print(al.get(j) + " ");
+				}
+				System.out.println();
+			}
+		}
+	}
+
+}
+
+
+===================================================================================================
+{
+    "head": {
+        "responseTimestamp": "1555581762193",
+        "version": "v1"
+    },
+    "body": {
+        "resultInfo": {
+            "resultStatus": "F",
+            "resultCode": "2004",
+            "resultMsg": "SSO Token is invalid",
+            "bankRetry": null,
+            "retry": null
+        },
+        "extraParamsMap": null
+    }
+}
+
+ 

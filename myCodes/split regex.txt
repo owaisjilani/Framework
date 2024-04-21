@@ -1,0 +1,9 @@
+split("\\t|,|;|\\.|\\?|!|-|:|@|\\[|\\]|\\(|\\)|\\{|\\}|_|\\*|/");
+
+	String money="$569,786.67";
+		money=money.replaceAll("[^\\d.]","").split("[.]")[0];
+		System.out.println(money);
+
+
+List<String> exp = Arrays.asList(ListValues.split(","));
+	

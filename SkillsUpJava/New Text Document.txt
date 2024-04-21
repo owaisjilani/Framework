@@ -1,0 +1,46 @@
+click();
+sendKeys();
+Actions a;
+WebDriver d=new Chrome();
+getScreenShotas();
+untilElementVisible();
+JavaScriptExecutor js;
+By.xpath("");
+Select s=new Select();
+s.selectByindex(2);
+s.selectByVisibleText();
+moveElementTo();
+contextClick().build().perform();
+WebElement element;
+switchTo(frameID);
+switchToDefault();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

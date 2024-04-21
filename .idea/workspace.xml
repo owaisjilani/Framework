@@ -4,7 +4,124 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c93955b4-6070-4e0b-ac06-d477d2421205" name="Changes" comment="" />
+    <list default="true" id="c93955b4-6070-4e0b-ac06-d477d2421205" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.mylyn/.taskListIndex/segments_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.mylyn/.taskListIndex/write.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.mylyn/repositories.xml.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.mylyn/tasks.xml.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.jdt.core/index.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.9.0.20180606-2036.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.tips.ide/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.ui.intro/introstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/.metadata/version.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/New Text Document.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/A.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/AlphaSense.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Bread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/C.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Calsoft.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/CharacterCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Dell.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Egg.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/EntityPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/EntityPageSteps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Extend.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Food.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Hilti.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Interf.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Iris.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/IrisSoftware.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Meesho.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/MeeshoAPI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Pattern.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/PatternCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Paytm2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Practice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/PropertyGuru.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/RandomMath.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/ReadExcel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/RestAPI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Rupeek.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/SAS.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Solution.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/SubstringCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/bin/com/programs/Validator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/int/2ndProblem.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/int/Demo.java.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/int/New Text Document (2).txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/int/New Text Document.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/int/encrypter.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/int/id.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/int/iris.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/int/nutri.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/int/sql.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/sel.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/AlphaSense.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Calsoft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/CharacterCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Dell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Duplicate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/EntityPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/EntityPageSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Extend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Hilti.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Interf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Iris.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/IrisSoftware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Meesho.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/MeeshoAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Pattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/PatternCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Paytm2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/PropertyGuru.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/RandomMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/ReadExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/RestAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Rupeek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/SAS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/SubstringCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/com/programs/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/main/java/AlphaBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/main/java/AlphaExtend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/main/java/Calsoft2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/main/java/CountName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/main/java/Paytm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/main/java/Paytm3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/main/java/StringProg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/main/java/org/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SkillsUpJava/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +152,21 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="GIT" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="GIT" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -51,7 +183,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713091113262</updated>
-      <workItem from="1713091114339" duration="10239000" />
+      <workItem from="1713091114339" duration="14733000" />
+      <workItem from="1713154903567" duration="37000" />
+      <workItem from="1713239534201" duration="24000" />
+      <workItem from="1713239566331" duration="452000" />
+      <workItem from="1713240038449" duration="541000" />
+      <workItem from="1713323838273" duration="70000" />
     </task>
     <servers />
   </component>

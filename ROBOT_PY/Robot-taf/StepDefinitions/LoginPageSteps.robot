@@ -2,7 +2,50 @@
 *** Settings ***  
 Resource    ..${/}Keywords${/}LoginPageKeywords.robot
 
-*** Keywords ***  
+#*** Variable ***
+#${LIST} = Set Variable ${EMPTY}
+
+*** Keywords ***
+Launch Google
+    LoginPageKeywords.Launch Google
+
+Search for BookmyShow Text and press Enter
+    LoginPageKeywords.Input Google Search with text BookMyShow
+
+Click on 3rd Link
+    Run Keyword and Ignore Error    LoginPageKeywords.Scroll and click BMS Link
+#    @{LIST} = Set Variable
+    Log Many    Get Webelements     ${oButton}
+#    Log Many    ${LIST}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Open Browser To Login Page
     LoginPageKeywords.Open Browser To Login Page
 

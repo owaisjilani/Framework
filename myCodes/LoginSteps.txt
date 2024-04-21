@@ -1,0 +1,44 @@
+package com.aml.stepdefinitions;
+
+import com.aml.pages.LoginPage;
+
+//import io.cucumber.java.After;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import net.thucydides.core.annotations.Steps;
+
+public class LoginSteps {
+
+	@Steps
+	LoginPage LoginPage;
+
+	@Given("user is on login page")
+	public void user_is_on_login_page() {
+		LoginPage.open();
+		LoginPage.verifyLoginPage();
+	}
+
+	@When("user login as {string}")
+	public void user_login_as_admin(String User_Role) throws Exception {
+		LoginPage.enterUsername(User_Role);
+		LoginPage.enterPassword(User_Role);
+	}
+
+	@And("user go to alert workbench")
+	public void user_goto_alert_workbench() {
+		LoginPage.navigate_alertWorkbench();
+	}
+
+	@Then("User should be able to see scheduled maintainance message on Login Page")
+	public void user_should_be_able_to_see_scheduled_maintainance_message_on_Login_Page() {
+		LoginPage.verify_ScheduledMaintainanceText();
+	}
+
+//	@After
+//	public void user_logout_the_application() {
+//		LoginPage.logout();
+//	}
+
+}

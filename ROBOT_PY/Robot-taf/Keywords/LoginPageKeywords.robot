@@ -15,7 +15,28 @@ Variables   ..${/}PageObjects${/}PageText${/}LoginPage.py
 Variables   ..${/}PageObjects${/}Locators${/}LoginPageElements.py
 Variables   ..${/}PageObjects${/}Locators${/}CommonLocators.py
 
-*** Keywords ***  
+*** Keywords ***
+Launch Google
+    Go To  ${${ENV}_APP_LOGIN_URL}
+
+Input Google Search with text BookMyShow
+     Input Text    ${searchInput}  Bookmyshow
+     Press Keys    ${searchInput}    RETURN   #Pressing Enter Key here
+     
+Scroll and click BMS Link
+    Util.Scroll and Wait For Element     ${oBmsLink}
+    Click Element    ${oBmsLink}
+
+
+
+
+
+
+
+
+
+
+
 
 Input Username
     [Arguments]  ${username}

@@ -1,0 +1,12 @@
+File directory = new File( FileUtil.folderPath +"\\src\\test\\resources\\Download");
+		File[] files = directory.listFiles(File::isFile);
+		int filesize1,filesize2;
+		do {
+
+			   filesize1 = files.length; 
+			   System.out.println("File sixe current is "+filesize1);// check file size
+			   Thread.sleep(2000); 
+			   System.out.println("Waiting for File to be Downloaded....!!");// wait for 5 seconds
+			   filesize2 = files.length;  // check file size again
+			} while (filesize1 != filesize2);
+	}

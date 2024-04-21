@@ -1,0 +1,11 @@
+A is an int
+run();
+A a=new B();
+a.run();
+
+run(int a)
+run (String a , int a);
+
+
+
+

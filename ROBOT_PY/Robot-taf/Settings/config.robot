@@ -3,12 +3,12 @@
 
 ${ENV}                                  AUTO
 ${ZOOM_PERCENTAGE}                      100
-${APP_URL}                              https://www.saucedemo.com/
-${AUTO_APP_URL}                         https://www.saucedemo.com/
+${APP_URL}                              https://petstore.swagger.io/v2
+${AUTO_APP_URL}                         https://www.google.com/
 ${ACCESS_MANAGEMENT_URL}                ${${ENV}_APP_URL}inventory.html
 ${CartUrl}                              ${${ENV}_APP_URL}cart.html
-${AUTO_APP_LOGIN_URL}                   https://www.saucedemo.com/
-${BETA_APP_LOGIN_URL}                   https://www.saucedemo.com/
+${AUTO_APP_LOGIN_URL}                   https://www.google.com/
+${BETA_APP_LOGIN_URL}                   https://www.google.com/
 &{DELAY}                                VERYSHORT=800ms    SHORT=4s    MEDIUM=10s    LONG=20s    VERYLONG=60s    SHORTEST=300ms
 ${COOKIE}
 ${Logged Username}

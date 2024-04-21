@@ -1,0 +1,50 @@
+ @UnderDevelop
+   Scenario Outline: TC-23637 Validate the button present on the Customer Risk Profile Template Details page and its status.
+    When user login as "<User_Role>"
+		And user navigates to crp form builder page
+		And user clicks on the "<Template>" and "<Status>" 
+		Then user verifies the buttons for "<Status>" and "<Template>"
+		
+    Examples: 
+      | User_Role |Template		|	Status  |
+      | stgadmin  |Individual |Active   |
+      | stgadmin  |Individual |Draft 	  | 	
+      | stgadmin  |Individual |Inactive |	
+      | stgadmin  |Business	  |Active   |
+      | stgadmin  |Business   |Draft 	  | 	
+      | stgadmin  |Business   |Inactive |	
+
+@Step
+	public void verifyactivateAndCloneButton(String Status, String Template) {
+		$(By.xpath("//div[@class='rt-tr -odd']")).waitUntilVisible().click();
+		$(By.id("subMenuLink_details")).waitUntilVisible();
+		System.out.println("This is the status ********* " + Status);
+		switch (Status) {
+
+		case "Active":
+			Assert.assertTrue(bs.verifyButtonDisabled(activateButton));
+			Assert.assertTrue(bs.verifyButtonEnabled(cloneButton));
+			System.out.println("*****Buttons Verified Successfully*******");
+			cloneTemplate(Template);
+			break;
+
+		case "Inactive":
+			Assert.assertTrue(bs.verifyButtonDisabled(cloneButton));
+			Assert.assertTrue(bs.verifyButtonEnabled(activateButton));
+			System.out.println("*****Buttons Verified Successfully*******");
+			break;
+
+		case "Draft":
+			Assert.assertTrue(bs.verifyButtonEnabled(addriskAttributeButton));
+			Assert.assertTrue(bs.verifyButtonEnabled(activateButton));
+			Assert.assertTrue(bs.verifyButtonDisabled(cloneButton));
+			System.out.println("*****Buttons Verified Successfully*******");
+			activate_Template();
+			break;
+
+		default:
+			System.out.println("Invalid Case");
+			break;
+		}
+
+	}

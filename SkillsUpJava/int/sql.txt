@@ -1,0 +1,1 @@
+select MAX(Salary) from EMP where Salary NOT IN (select max(salary) from EMP  );

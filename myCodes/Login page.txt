@@ -1,0 +1,69 @@
+package com.aml.pages;
+
+import static org.junit.Assert.assertEquals;
+import org.openqa.selenium.By;
+import net.serenitybdd.core.environment.EnvironmentSpecificConfiguration;
+import net.serenitybdd.core.pages.PageObject;
+import net.thucydides.core.annotations.Step;
+import net.thucydides.core.util.EnvironmentVariables;
+import com.aml.utilities.*;
+//import io.cucumber.java.After;
+
+
+
+public class LoginPage extends PageObject {
+
+	String alertsTab = "//span[contains(text(),'Alerts')]";
+	String username = "loginForm:user";
+	String password = "loginForm:userpw";
+	String alertWorkbench = "//a[@id='general-alerts-link']";
+	String scheduledSystemMaintainance = "//strong[contains(text(),'Scheduled System Maintenance')]";
+	String logout = "logoutBadge-icon";
+	private EnvironmentVariables environmentVariables;
+	@Step
+	public void verifyLoginPage() {
+
+		$(By.id(username)).waitUntilEnabled();
+	}
+
+	@Step
+	public void enterUsername(String User_Role) throws Exception {
+
+		$(By.id(username)).typeAndEnter(FileUtil.readProperty("username_" + User_Role));
+
+	}
+
+	@Step
+	public void enterPassword(String User_Role) throws Exception {
+
+		$(By.id(password)).typeAndEnter(FileUtil.readProperty("password_" + User_Role));
+
+	}
+
+	@Step
+	public void navigate_alertWorkbench() {
+
+		$(By.xpath(alertsTab)).waitUntilClickable();
+		String alertworkbenchpageurl = EnvironmentSpecificConfiguration.from(environmentVariables)
+				.getProperty("alertworkbench.page");
+		openAt(	alertworkbenchpageurl);
+
+	}
+	
+	@Step
+	public void verify_ScheduledMaintainanceText() {
+		$(By.xpath(scheduledSystemMaintainance)).waitUntilVisible();
+		assertEquals($(By.xpath(scheduledSystemMaintainance)).isVisible(), true);
+	}
+
+
+	//@Step
+	/*@After
+	public void logout() {
+
+		$(By.id(logout)).waitUntilClickable();
+		$(By.id(logout)).click();
+		$(By.id(username)).waitUntilEnabled();
+	}
+*/
+}

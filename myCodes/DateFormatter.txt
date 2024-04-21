@@ -1,0 +1,69 @@
+package Utils;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Date;
+import java.util.List;
+
+public class Practice {
+
+	public static void main(String[] args) throws ParseException {
+		String a = "Test1,Test2,Test3";
+		String fileType = ".xls";
+		String[] FileExtensionArr = { "pdf", "csv", "doc", "ppt", "txt", "xls" };
+		check(FileExtensionArr, "pdf");
+		
+		String[] res = a.split(",");
+		List<String> exp = new ArrayList<String>();
+		for (String string : res) {
+			exp.add(string);
+		}
+
+		String dateStr1 = "1995-24-04";
+		String dateStr2 = "1995-24-03";
+		// Parsing the given String to Date object
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-dd-MM");
+		Date date = new Date();
+		System.out.println("Todays Date is " + formatter.format(date));
+		date = formatter.parse(dateStr1);
+		Date date2 = formatter.parse(dateStr2);
+
+		int bool1 = date.compareTo(date2);
+		System.out.println(bool1);
+
+		if (true) {
+			System.out.println(dateStr1 + " is after " + dateStr2);
+		}
+
+		ArrayList<String> firstList = new ArrayList<String>(Arrays.asList("Owais", "Java", "Python", "Ruby", "Go"));
+		ArrayList<String> secondList = new ArrayList<String>(Arrays.asList("Java", "Python", "Ruby", "Go", "Owais"));
+		Collections.sort(firstList);
+		Collections.sort(secondList);
+		System.out.println("When Lists are same: " + firstList.equals(secondList));
+		System.out.println(exp.toString());
+		System.out.println(fileType.contains("pdf") || fileType.contains("txt") || fileType.contains("csv")
+				|| fileType.contains("xls") || fileType.contains("doc"));
+	}
+
+	private static Boolean check(String[] FileExtensionArr, String toCheckValue) {
+
+		boolean test = false;
+		for (String element : FileExtensionArr) {
+			if (element == toCheckValue) {
+				test = true;
+				break;
+			}
+		}
+		System.out.println("Is " + toCheckValue + " present in the array: " + test);
+		return test;
+	}
+
+/*SimpleDateFormat inputDateFormat = new SimpleDateFormat("yyyy-mm-dd");
+					Date tempDate=inputDateFormat.parse(actualUiValue);
+					SimpleDateFormat outputFORMAT = new SimpleDateFormat("dd/mm/yyyy");
+					actualUiValue= outputFORMAT.format(tempDate); */
+
+}

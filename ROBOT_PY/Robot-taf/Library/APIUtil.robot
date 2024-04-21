@@ -19,14 +19,14 @@ Login and getCookie
     Return From Keyword    ${COOKIES}     
 
 Get global Headers
-    ${COOKIES}    Login and getCookie
-    ${AUTHORIZATION_TOKEN}=   Get From Dictionary    ${COOKIES}    token  
-    ${AUTHORIZATION_TOKEN}    Replace String    ${AUTHORIZATION_TOKEN}    %20    ${SPACE}
-    ${CookieAPI}=    Get From Dictionary    ${COOKIES}    cookie
+#    ${COOKIES}    Login and getCookie
+#    ${AUTHORIZATION_TOKEN}=   Get From Dictionary    ${COOKIES}    token
+#    ${AUTHORIZATION_TOKEN}    Replace String    ${AUTHORIZATION_TOKEN}    %20    ${SPACE}
+#    ${CookieAPI}=    Get From Dictionary    ${COOKIES}    cookie
     ${headers}    Create Dictionary
     ...    accept=application/json
-    ...    Authorization=${AUTHORIZATION_TOKEN}
-    ...    Cookie=${CookieAPI}
+#    ...    Authorization=${AUTHORIZATION_TOKEN}
+#    ...    Cookie=${CookieAPI}
     Return From Keyword    ${headers}
 
 Set Global Header
@@ -34,6 +34,6 @@ Set Global Header
     Set Suite Variable  ${headers}
 
 Format Response
-    [Arguments]    ${response}
+    [Arguments]      ${response}
     ${response} =    Evaluate    "${response}".replace('[', '').replace(']', '').replace("'", '')
     [Return]    ${response}

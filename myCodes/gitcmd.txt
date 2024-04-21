@@ -1,0 +1,25 @@
+git status
+git checkout -b branchname
+git branch
+git add *
+git commit -m "comments"
+git push origin branchname
+git pull origin branchname
+git reset --hard HEAD
+git clean -xffd
+git pull
+git clone url
+git fetch -p
+git stash
+git stash show -p
+git stash apply
+
+
+=======================
+
+USE---PROD_QA
+IBC
+=======================
+
+DbUtil --setStorageConfig()  ---update it
+ServiceUtil --startDataIntake()---\

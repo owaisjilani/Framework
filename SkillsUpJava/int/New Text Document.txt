@@ -1,0 +1,34 @@
+String s = "a2b3d";
+
+Char[] a=s.toChar();
+int[] b={0,1,2,3,4,5,6,7,8,9};
+
+for(int i=0;i<a.length;i++)
+{
+	if(b[
+}
+
+
+
+
+
+ Current Address :L-43, New Indira Colony, Burhanpur, Madhya Pradesh (450331) [WFH]
+ Permanent Address : L-43, New Indira Colony, Burhanpur, Madhya Pradesh (450331)
+ Notice Period/earliest availability to join :LWD - 06-JULY-2022
+
+Reference 1:
+
+• Name of the Reference:Venugopal
+• Reporting Relationship: Team Lead
+• Associated Company:Mphasis Ltd.
+• Phone No:9500076183
+• Email ID:venugopal.V02@mphasis.com
+• Years Associated:2019-2020
+
+Reference 2 :
+• Name of the Reference:Francis Lawrence
+• Reporting Relationship:Manager
+• Associated Company:Mphasis Ltd.
+• Phone No:9972098520
+• Email ID:lawrence.f@mphasis.com
+• Years Associated:2020-21

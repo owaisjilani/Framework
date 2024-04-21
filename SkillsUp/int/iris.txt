@@ -1,0 +1,22 @@
+RestAssured.baseUri="https://reqres.in/api";
+
+<"Type"> <BODY>
+
+Examples :
+
+If(Type==POST)
+{
+POST_REQ(,
+
+
+Response res=RestAssured.given().content(ContentType.JSON).when().get("/users").then().extract().response();
+String out=res.asString();
+
+1 
+2 
+
+a==b;
+a.equals(b)
+
+
+

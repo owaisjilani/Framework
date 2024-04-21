@@ -1,0 +1,48 @@
+// you can also use imports, for example:
+// import java.util.*;
+
+// public class Solution {
+
+//     public static void main(String [] args) {
+//         // you can write to stdout for debugging purposes, e.g.
+//         String z=null;
+//         if(z==null)
+//         {
+//             z="";
+//         }
+//       char[] filter= z.toCharArray();
+//       int counter=0;
+//       for(int i=0;i<filter.length-2;i++)
+//       {
+//           if(filter[i]=='0')
+//           {
+              
+//               if(filter[i+1]=='1')
+//               {
+//                 if(filter[i+2]=='0')
+//                 {
+//                     counter++;
+//                 }
+//               }
+//           }
+//       }
+//         System.out.println(counter);
+//     }
+// }
+
+
+feature : Amazon add to cart
+
+Scenario : Validating the Add to Card Button
+Given : User is on the login Page
+When : Login with valid Username and Password
+And : User Click on Add to Cart Button
+Then : Added to Cart Screen should appeaer
+
+class Homepage extends PageObject {
+ArrayList<String> windows=new ArrayList<String>(driver.getwindowHandles);
+
+    String element="//div[text()='something";
+https://meesho.com/customer/1.0/download-data
+   
+}

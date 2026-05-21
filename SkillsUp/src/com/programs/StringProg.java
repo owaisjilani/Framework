@@ -9,13 +9,11 @@ public class StringProg {
 		b=b.replaceAll("[^\\d]", " ");
 		b=b.trim();
 		b= b.replaceAll(" +", " ");
-		System.out.println("this is arrayList number "+b);
-		//String b = "Owais 67 is alpha78_Numeric86 5 4 32";
 		String[] ak=b.split(" "); 
 		int[] ar=Arrays.stream(ak)
                 .mapToInt(Integer::parseInt)
                 .toArray();
-		System.out.println("Testing Interview EATON "+ ar[2]);
+		System.out.println("Testing Interview EATON "+ ar[0]);
 		
 //		char[] s = b.toCharArray();
 //		int sum=0;

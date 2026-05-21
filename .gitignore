@@ -1,0 +1,15 @@
+.DS_Store
+**/.DS_Store
+
+# Java build output
+bin/
+target/
+build/
+*.class
+
+# IDE/workspace metadata
+.idea/
+.metadata/
+.settings/
+.classpath
+.project

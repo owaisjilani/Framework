@@ -1,4 +1,4 @@
-package com.programs;
+package Utils.programs;
 
 public class RandomMath {
 	public static String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+=;'.,//";

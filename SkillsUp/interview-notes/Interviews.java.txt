@@ -1,0 +1,588 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+
+
+
+public class Practice {
+	public static void main(String[] args) throws IOException {
+		String fileName="C:\\AUTOMATION\\MAF\\PatternLibrary\\Screen.txt";
+		//Load_Patterns_TextFile(fileName);
+		starPatterns();
+		//sortArr();
+		maxEle();
+		//		String a="Owais";
+		//		String b="owl";
+		//		String res=subString( a, b);
+	}
+
+
+	private static void maxEle() {
+		int[] a= {25,54,69,7,67,72,0};
+		int i,j,k,temp = 0;
+
+
+		for( i=0;i<a.length;i++)
+		{
+			for(j=i+1;j<a.length;j++)
+			{
+				if(a[i]>a[j])
+				{
+					k=a[i];
+					a[i]=a[j];
+					a[j]=k;
+				}
+				//temp=a[i];
+
+			}
+			//System.out.print("The  max is " + min+ " ");
+			//break;
+			System.out.print(a[i]+" ");
+		}
+		System.out.println("");
+		System.out.println("Max is "+ (a[a.length-1]));
+
+	}
+
+	
+	
+
+	private static void sortArr() {
+		// TODO Auto-generated method stub
+		int[] ar= {2,8,12,6,7,3,1};
+		int n=Arrays.stream(ar).max().getAsInt();
+		int m[] =Arrays.stream(ar).sorted().toArray();
+		System.out.println(m+" : Sorted ");
+		System.out.println("Max element is "+ n);
+		int[] arrr= {2,8,12,6,7,3,1};
+		String[] strarray = {"Mango", "Apple", "Grapes", "Papaya", "Pineapple", "Banana", "Orange"}; 
+		Arrays.sort(strarray);
+		Arrays.sort(strarray, Collections.reverseOrder());
+		System.out.println(Arrays.toString(strarray) +" ");
+		Arrays.sort(ar);
+		System.out.print(Arrays.toString(ar) +" ");
+
+	}
+
+
+	private static void subString(String a, String b) {
+		ArrayList<String> al = new ArrayList<String>();
+		al.add("owais");
+
+	}
+
+
+	private static void starPattern() {
+		int i,j,n;
+		int num=5;
+		char a='A';
+		n=8;
+		for(i=0;i<n;i++)
+		{
+			System.out.print(" ");
+
+			for(j=0;j<=i;j++)
+			{
+				System.out.print("*");
+
+			}
+			System.out.println();
+		}
+	}
+
+	private static void starPatterns() {
+		int n=5;
+		int i=0; int k;
+		for (i=0; i<n; i++) //outer loop for number of rows(n) { for (int j=n-i; j>1; j--) //inner loop for spaces
+		{ 
+			//System.out.print(" "); //print space
+			for (k=n-i; k>=0; k--)         
+			{  
+				//prints space between two stars      
+				System.out.print(" ");   
+			}  
+			for (int j=0; j<=i; j++ ) //inner loop for number of columns
+			{ 
+				System.out.print("* "); //print star
+			} 
+
+			System.out.println(); //ending line after each row
+		} 
+	}
+
+
+
+	public static void Load_Patterns_TextFile(String fileName) throws IOException
+	{
+		String Key,Value,line;
+		String[] arr;
+
+		FileReader oFR = new FileReader(fileName);
+		BufferedReader oBR = new BufferedReader(oFR);
+		HashMap<String, String> dictionary=new HashMap<String, String>();
+		while ((line=oBR.readLine()) != null)
+		{
+			arr = line.split("\\t");
+			Key = arr[0];
+			Value = arr[1];
+			dictionary.put(Key,Value);
+			System.out.println(Key+" "+Value);
+			String res=dictionary.get("Login");
+			System.out.println(res);
+		}
+		oBR.close();
+	}
+}
+
+*****************************************************************************************************************************************88
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.asserts.SoftAssert;
+
+class Test {
+
+	public static void main(String[] args) throws IOException {
+
+		boolean i=true;
+		while (i) {
+			System.out.println("Owais Jilani");
+			i=false;
+		}
+
+		int _$=10;
+		String a="owais";
+		String b=new String("owais");
+		String c="ow"+"ais";
+		System.out.println(a==b);
+		System.out.println(a.equals(b));
+		System.out.println(a==c);
+		System.out.println(a.equals(c));
+		System.setProperty("webdriver.chrome.driver","C:\\Softwares\\ChromeDriver\\chromedriver.exe");
+		SoftAssert as=new SoftAssert();
+
+//		DesiredCapabilities ch=DesiredCapabilities.chrome();
+//		ch.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
+//		ChromeOptions cs=new ChromeOptions();
+//		cs.merge(ch);
+//		WebDriver driver=new ChromeDriver();
+//		driver.get("http://www.google.com");
+//		File fs=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyFile(fs,new File("C:\\AUTOMATION\\Framework\\src\\ScreenShot\\1.png"));
+//		as.assertTrue(false);
+//		as.assertAll();
+
+	}
+}
+
+***************************************************************************************************************8
+
+public class Zs {
+
+	public static void main(String[] args) {
+
+
+		String str = "Owais";
+
+		str = str.toLowerCase();
+
+		// toCharArray() is used to convert 
+		// string to char array
+		char[] chars = str.toCharArray();
+
+		int count = 0;
+
+		for (int i = 0; i < str.length(); i++)
+		{
+			// check if char[i] is vowel
+			if (str.charAt(i) == 'a' || str.charAt(i) == 'e'
+					|| str.charAt(i) == 'i'
+					|| str.charAt(i) == 'o'
+					|| str.charAt(i) == 'u')
+			{
+				// count increments if there is vowel in
+				// char[i]
+				count++;
+			}
+		}
+
+		// display total count of vowels in string
+		System.out.println("Total no of vowels in string are: " + count);
+	}
+
+
+
+
+}
+
+
+**********************************************************************************************************
+
+import java.util.List;
+
+public class NICE {
+
+	public static void main(String[] args) {
+
+		String[] a= {"a","b","a","c","d","b"};
+		
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=i+1;j<a.length;j++)
+			{
+				if(a[i].equals(a[j]))
+				{
+					System.out.print(a[i] + " ");
+					
+				}
+				else {
+					//System.out.println("Skip");
+				}
+			}
+		}
+		
+	}
+
+}
+*****************************************************************************************************
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class Streams {
+
+	public static void main(String[] args) {
+
+		int arry[] = {5, 10, 5, 4, 9, 120, 4, 6, 10};
+		int n = arry.length;
+		printDistinct(arry, n);
+
+		int[] ar= {1,2,4,6,6,7,2,8};
+		String[] arr= {"1","2","4","6","6","7","2","8"};
+		HashMap<String, Integer> hm= new HashMap<String, Integer>();
+		HashMap<Integer, Integer> hs= new HashMap<Integer, Integer>();
+		for (int i =0;i<ar.length;i++) {
+			hs.put(ar[i], i);
+		}
+		for (int i =0;i<ar.length;i++) {
+			hm.put(arr[i], i);
+		}
+		System.out.println(hm.keySet()+ " ");
+		System.out.print(hs.keySet()+ " ");
+
+		ArrayList<String> names=new ArrayList<String>();
+		ArrayList<String> Sname=new ArrayList<String>();
+		names.add("owi");
+		names.add("tassu");
+		names.add("annu");
+		names.add("amu");
+		names.add("ajji");
+
+		int count=0;
+
+		for (String name : names) {
+
+			if(name.startsWith("a"))
+			{
+				count++;
+			}
+
+		}
+		System.out.println(count);
+		smap();
+
+
+
+	}
+
+	static void printDistinct(int arr[], int n)
+	{
+		// Pick all elements one by one
+		for (int i = 0; i < n; i++)
+		{
+			// Check if the picked element
+			// is already printed
+			int j;
+			for (j = 0; j < i; j++)
+				if (arr[i] == arr[j])
+					break;
+
+			// If not printed earlier,
+			// then print it
+			if (i == j)
+				System.out.print( arr[i] + " ");
+		}
+	}
+
+	private static void smap() {
+		String ap="My name is Owais Jilani";
+		String[] ls=ap.split(" ");
+		List<String> l=new ArrayList<String>();
+		for (String string : ls) {
+			l.add(string);
+
+		}
+
+
+		List<String> as=Stream.of("Owais","Amreen","Taskeen","Azlan","anika").map(a->a.toUpperCase()).filter(a->a.startsWith("A")).collect(Collectors.toList());
+		Collections.sort(l);
+		System.out.println(l.toString()+" ");
+		Collections.sort(as);
+		//   System.out.println(as.get(0));
+		//   System.out.println(as.get(1));
+		//   System.out.println(as.get(2));
+		//		
+	}
+
+}
+
+********************************************************************************************************
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.codoid.products.exception.FilloException;
+import com.codoid.products.fillo.Connection;
+import com.codoid.products.fillo.Fillo;
+import com.codoid.products.fillo.Recordset;
+
+public class ReadExl {
+
+	public static void main(String[] args) throws FilloException {
+
+		
+
+		//String[] result=
+				readEXL();
+				//map();
+		//System.out.println("This is the data "+ result.toString());
+
+	}
+
+
+
+	private static void map() {
+		Map<Integer,String> team1 = new HashMap<Integer, String>();
+		team1.put(1,"United");
+		team1.put(5,"Owi");
+		team1.put(7,"Owais");
+		List<Integer> keys = new ArrayList<>(team1.keySet());
+//		for ( Integer key : team1.keySet() ) {
+//		    System.out.println( key );
+//		}
+		
+		System.out.println(keys.get(2));
+		
+	}
+
+
+
+	public static void readEXL() throws FilloException
+	{
+		Fillo f=new Fillo();
+		Connection con=f.getConnection("C:\\AUTOMATION\\AutomationFw\\src\\test\\java\\resources\\read.xlsx");
+		Recordset rs;
+		String query="Select * from Sheet1 ";
+		rs=con.executeQuery(query);
+		
+	 ArrayList<String> al=new ArrayList<>(rs.getFieldNames());
+		int size=al.size();
+		System.out.println(rs.getFieldNames());
+		//int count=rs.getCount();
+		while(rs.next()){
+			
+			for(int i=0;i<size;i++)
+			{
+			System.out.print(rs.getField(al.get(i))+ "\t");
+			}
+			System.out.println("");
+		}
+
+	}	
+}
+
+*************************************************************************************************************
+
+
+public class NICE_L3 {
+
+	public static void main(String[] args) {
+		Boolean r=checkArr();
+		System.out.println(r);
+		
+	}
+	
+	public static boolean checkArr() {
+		int a=10;
+		int[] b= {16,-6};
+		
+		for(int i=0;i<b.length;i++)
+		{
+			for(int j=i+1;j<b.length;j++)
+			{
+				int sum=b[i]+b[j];
+				if(sum==a)
+				{
+					System.out.println("Found");
+					return true;
+				}
+			}
+		}
+		System.out.println("NotFound");
+		return false;
+		
+	}
+	// 1) Taking an array as empty.
+	//2)Taking all values equals
+	//3)Taking only 1 Value
+	//4)Taking 2 values
+	//5)Taking values which sum is less than 10
+	//6)
+	
+}
+*********************************************************************************
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import java.util.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Shopping {
+	static WebDriver driver;
+	public static void main(String[] args) throws InterruptedException {
+
+		System.setProperty("webdriver.chrome.driver","C:\\Softwares\\ChromeDriver\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		 WebDriverWait wait= new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("")));
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/");
+		//Thread.sleep(3000);
+		//Shopping a=new Shopping();
+		String[] veggie = {"Brocolli","Beetroot","Tomato","Potato"};
+		AddtoCart(veggie);
+	}
+
+
+	public static void AddtoCart(String[] veggie) 
+	{
+		int j=0;
+		
+		List<WebElement> products=driver.findElements(By.cssSelector("h4.product-name"));	
+		for(int i=0;i<products.size();i++)
+			//for(Webelement prod:products)
+		{
+			String[] formattedVg=products.get(i).getText().split("-");
+			String RequiredVeggie=formattedVg[0].trim();
+			List vegetable=Arrays.asList(veggie);
+			if(vegetable.contains(RequiredVeggie))
+			{
+				j++;
+				driver.findElements(By.xpath("//div[@class=\"product-action\"]/button")).get(i).click();
+
+				//if(j==veggie.length) 
+					if(j==vegetable.size()) 
+				{
+					break;
+				}
+
+			}
+		}
+
+	}
+
+}
+
+//**************************************************************************************************************
+
+public class Persistent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Persistent.arr();
+	}
+
+	public static   int[] arr()
+	{
+		int[] a= {1,2,3,4,5};
+		int ar[]=new int[2];
+		int b=7;
+		int res=0;
+		for(int i=0;i<a.length;i++)
+		{
+			for(int j=i+1;j<a.length;j++)
+			{
+				res=a[i]+a[j];
+
+				if(b==res)
+				{
+					System.out.println("The first index is "+ i + "and second is "+ j);
+					ar[0]=a[i];
+					ar[1]=	a[j];	
+				}
+			}
+		}
+		
+		return ar;
+	}
+
+}
+//*******************************************************************
+
+
+public class prime {
+	public static void main(String[] args) {
+
+		prime p=new prime();
+		p.primeNum();
+	}
+
+	private static void primeNum() {
+		//int j=0;
+		int temp;
+		for(int i=1;i<=100;i++)
+		{
+			temp=0;	
+			for(int j=2;j<i;j++)
+			{
+				if(i%j==0)
+				{
+					temp=1;
+				}
+
+			}
+			if(temp==0)
+			{
+				System.out.print(i+ " ");
+
+			}
+
+		}
+	}
+
+
+
+
+}
+

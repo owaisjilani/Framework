@@ -1,22 +1,16 @@
 package com.programs;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class CharacterCount {
 	public static void main(String[] args) {
 		HashMap<Character,Integer> result=new HashMap<Character,Integer>();
 		String count ="owaisjilani@outlook";
 		result=countString(count);
-		System.out.println(result.keySet());
-		//ArrayList<String> rl = new ArrayList<>(result.keySet);
-		
-//		for (Map.Entry entry: result.entrySet()) {
-//			System.out.println(entry.getKey() +" "+ entry.getValue());
-//		}
+		for (Map.Entry entry: result.entrySet()) {
+			System.out.println(entry.getKey() +" "+ entry.getValue());
+		}
 		
 	}
 

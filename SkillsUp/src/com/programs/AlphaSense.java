@@ -6,7 +6,7 @@ import javax.management.RuntimeErrorException;
 
 public class AlphaSense {
 	public static void main(String[] args) throws Exception {
-		int[] a = {10,12,13,5};
+		int[] a = { 1 };
 		AlphaSense t = new AlphaSense();
 		t.increment(a);
 		System.out.println("Length is "+a.length);
